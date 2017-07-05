@@ -10,6 +10,9 @@
 		4D0431E51EEF7FF700C2911C /* ListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0431E41EEF7FF700C2911C /* ListCollectionViewCell.m */; };
 		4D0431E81EEF890B00C2911C /* ListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0431E71EEF890B00C2911C /* ListModel.m */; };
 		4D0431EB1EEF931300C2911C /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0431EA1EEF931300C2911C /* ListViewController.m */; };
+		4D32C72F1F0CD92500E35822 /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D32C72E1F0CD92500E35822 /* SearchView.m */; };
+		4D32C7321F0CDFAE00E35822 /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D32C7311F0CDFAE00E35822 /* AlertView.m */; };
+		4D32C7341F0CF28D00E35822 /* search.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D32C7331F0CF28D00E35822 /* search.plist */; };
 		4D3B84501EEFBE2600E6B418 /* ListTwoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B844F1EEFBE2600E6B418 /* ListTwoModel.m */; };
 		4D3B84531EEFC07600E6B418 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B84521EEFC07600E6B418 /* DetailViewController.m */; };
 		4D3B845A1EEFD8C700E6B418 /* HeadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B84581EEFD8C700E6B418 /* HeadTableViewCell.m */; };
@@ -95,6 +98,11 @@
 		4D0431E71EEF890B00C2911C /* ListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListModel.m; sourceTree = "<group>"; };
 		4D0431E91EEF931300C2911C /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		4D0431EA1EEF931300C2911C /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		4D32C72D1F0CD92500E35822 /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
+		4D32C72E1F0CD92500E35822 /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
+		4D32C7301F0CDFAE00E35822 /* AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
+		4D32C7311F0CDFAE00E35822 /* AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
+		4D32C7331F0CF28D00E35822 /* search.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = search.plist; sourceTree = "<group>"; };
 		4D3B844E1EEFBE2600E6B418 /* ListTwoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTwoModel.h; sourceTree = "<group>"; };
 		4D3B844F1EEFBE2600E6B418 /* ListTwoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTwoModel.m; sourceTree = "<group>"; };
 		4D3B84511EEFC07600E6B418 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -399,6 +407,10 @@
 		4D497A241EEE5F2A00FF2B95 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4D32C72D1F0CD92500E35822 /* SearchView.h */,
+				4D32C72E1F0CD92500E35822 /* SearchView.m */,
+				4D32C7301F0CDFAE00E35822 /* AlertView.h */,
+				4D32C7311F0CDFAE00E35822 /* AlertView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -496,6 +508,7 @@
 				4DD7700A1EEE41C5004D9743 /* ViewController.m */,
 				4D497A341EEE605900FF2B95 /* Header.h */,
 				4D497A351EEE606500FF2B95 /* PrefixHeader.pch */,
+				4D32C7331F0CF28D00E35822 /* search.plist */,
 				4D497A4F1EEE841D00FF2B95 /* Property List.plist */,
 				4D45D4DE1EF4F9F5002E4CC6 /* OfflineTTSDatFiles */,
 				4D57C1B01EF3E0CF001CAF3A /* BDSSpeechSynthesizer_SDK */,
@@ -689,6 +702,7 @@
 				4D45D4EB1EF4F9F5002E4CC6 /* English_Speech_Female.dat in Resources */,
 				4DD770101EEE41C5004D9743 /* Assets.xcassets in Resources */,
 				4D3B845B1EEFD8C700E6B418 /* HeadTableViewCell.xib in Resources */,
+				4D32C7341F0CF28D00E35822 /* search.plist in Resources */,
 				4D45D4E91EF4F9F5002E4CC6 /* Chinese_Speech_Male.dat in Resources */,
 				4D45D4EE1EF4F9F5002E4CC6 /* offline_engine_tmp_license.dat in Resources */,
 				4D497A501EEE841D00FF2B95 /* Property List.plist in Resources */,
@@ -768,6 +782,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D497A4C1EEE805800FF2B95 /* Reachability.m in Sources */,
+				4D32C7321F0CDFAE00E35822 /* AlertView.m in Sources */,
 				4D497A3B1EEE7D1C00FF2B95 /* ClassCollectionViewCell.m in Sources */,
 				4D3B84501EEFBE2600E6B418 /* ListTwoModel.m in Sources */,
 				4D0431EB1EEF931300C2911C /* ListViewController.m in Sources */,
@@ -776,6 +791,7 @@
 				4DD7700B1EEE41C5004D9743 /* ViewController.m in Sources */,
 				4D497A331EEE5F6D00FF2B95 /* SetViewController.m in Sources */,
 				4D45D5131EF52D65002E4CC6 /* ClassListOneTableViewCell.m in Sources */,
+				4D32C72F1F0CD92500E35822 /* SearchView.m in Sources */,
 				4DD770081EEE41C5004D9743 /* AppDelegate.m in Sources */,
 				4D497A2A1EEE5F2A00FF2B95 /* MainTabBarViewController.m in Sources */,
 				4D0431E51EEF7FF700C2911C /* ListCollectionViewCell.m in Sources */,
