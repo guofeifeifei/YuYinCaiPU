@@ -57,7 +57,7 @@ static NSString *cellID = @"cellID";
         }
         
     } failure:^(NSError *errer) {
-        [GFProgressHUD showMessagewithoutView:@"数据请求失败,请再试" afterDelay:2];
+        [GFProgressHUD showMessagewithoutView:@"服务器异常,请再试" afterDelay:2];
     }];
     
 }

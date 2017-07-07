@@ -62,6 +62,7 @@
 		4D57C1BE1EF3E155001CAF3A /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D57C1BD1EF3E155001CAF3A /* libz.1.2.5.tbd */; };
 		4D57C1C01EF3E169001CAF3A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D57C1BF1EF3E169001CAF3A /* AudioToolbox.framework */; };
 		4D57C1C21EF3E170001CAF3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D57C1C11EF3E170001CAF3A /* UIKit.framework */; };
+		4D640F291F0DCF820088826F /* SearchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D640F281F0DCF820088826F /* SearchListViewController.m */; };
 		4DAB94321EF2301000D0D8AB /* BurdenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB94311EF2301000D0D8AB /* BurdenModel.m */; };
 		4DD770051EEE41C5004D9743 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD770041EEE41C5004D9743 /* main.m */; };
 		4DD770081EEE41C5004D9743 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD770071EEE41C5004D9743 /* AppDelegate.m */; };
@@ -179,6 +180,8 @@
 		4D57C1BD1EF3E155001CAF3A /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		4D57C1BF1EF3E169001CAF3A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4D57C1C11EF3E170001CAF3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4D640F271F0DCF820088826F /* SearchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchListViewController.h; sourceTree = "<group>"; };
+		4D640F281F0DCF820088826F /* SearchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchListViewController.m; sourceTree = "<group>"; };
 		4DAB94301EF2301000D0D8AB /* BurdenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurdenModel.h; sourceTree = "<group>"; };
 		4DAB94311EF2301000D0D8AB /* BurdenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BurdenModel.m; sourceTree = "<group>"; };
 		4DD770001EEE41C5004D9743 /* CaiPu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaiPu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -393,6 +396,8 @@
 			children = (
 				4D497A2E1EEE5F6300FF2B95 /* SearchViewController.h */,
 				4D497A2F1EEE5F6300FF2B95 /* SearchViewController.m */,
+				4D640F271F0DCF820088826F /* SearchListViewController.h */,
+				4D640F281F0DCF820088826F /* SearchListViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -786,6 +791,7 @@
 				4D497A3B1EEE7D1C00FF2B95 /* ClassCollectionViewCell.m in Sources */,
 				4D3B84501EEFBE2600E6B418 /* ListTwoModel.m in Sources */,
 				4D0431EB1EEF931300C2911C /* ListViewController.m in Sources */,
+				4D640F291F0DCF820088826F /* SearchListViewController.m in Sources */,
 				4D3B84611EEFDDA900E6B418 /* MarkTableViewCell.m in Sources */,
 				4D3B84641EEFDDC800E6B418 /* RemarkTableViewCell.m in Sources */,
 				4DD7700B1EEE41C5004D9743 /* ViewController.m in Sources */,

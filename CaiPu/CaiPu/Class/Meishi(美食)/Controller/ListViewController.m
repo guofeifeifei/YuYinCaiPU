@@ -29,9 +29,11 @@ static NSString *cellID = @"cellID";
     [self.view addSubview:self.collectionView];
     [self.collectionView registerClass:[ListCollectionViewCell class] forCellWithReuseIdentifier:cellID];
     [self loadNewData];
+     __strong typeof(self) weakself = self;
     self.collectionView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-        self.page ++;
-        [self loadNewData];
+        NSLog(@"刷新")
+        [weakself loadNewData];
+        
     }];
 }
 - (void)loadNewData{
@@ -42,11 +44,13 @@ static NSString *cellID = @"cellID";
     }
 
     NSString *str = [NSString stringWithFormat:@"%@s=%@&page=%ld", caiList, [self.classStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]], (long)self.page];
+    
     NSLog(@"%@", str);
     [[AFNManagerRequest sharedUtil] requestGetAFURL:str parameters:nil succeed:^(id responseObject) {
-        NSLog(@"%@", responseObject);
+//        NSLog(@"%@", responseObject);
         NSString *staut =[NSString stringWithFormat:@"%@", responseObject[@"res"]];
         if ([staut isEqualToString:@"2"]) {
+            self.page ++;
             NSArray *dataArray = responseObject[@"data"];
             for (NSDictionary *dic in dataArray) {
                 ListTwoModel *model = [[ListTwoModel alloc] init];
@@ -54,6 +58,7 @@ static NSString *cellID = @"cellID";
                 [self.dateArray addObject:model];
             }
             [self.collectionView reloadData];
+              [self.collectionView.mj_footer endRefreshing];
         }else{
             [GFProgressHUD showMessagewithoutView:@"数据请求失败,请再试" afterDelay:2];
             

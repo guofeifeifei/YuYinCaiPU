@@ -9,6 +9,7 @@
 #import "SearchViewController.h"
 #import "SearchView.h"
 #import "AlertView.h"
+#import "SearchListViewController.h"
 @interface SearchViewController (){
     AlertView *_alertView;
 }
@@ -21,7 +22,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.translucent = YES;
     self.view.backgroundColor = [UIColor whiteColor];
-      self.view.layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"home_backgroup.png"].CGImage);
+    self.view.layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"home_backgroup.png"].CGImage);
     [self loadData];
     //标题图片
     UIImageView *titleImage = [[UIImageView alloc] initWithFrame:CGRectMake(GFMainScreenWidth - 588/3 * widthScale - 20 , 200 * widthScale, 588/3 * widthScale, 132/3 * widthScale)];
@@ -40,12 +41,23 @@
     alertBtn.frame = self.view.bounds;
     [alertBtn addTarget:self action:@selector(alertAction:) forControlEvents:UIControlEventTouchUpInside];
     [_alertView addSubview:alertBtn];
+    
+    
+    UIButton *searchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    searchBtn.frame = self.view.bounds;
+    [searchBtn addTarget:self action:@selector(searchAction:) forControlEvents:UIControlEventTouchUpInside];
+    [searchView addSubview:searchBtn];
+    
 }
 - (void)alertAction:(UIButton *)btn{
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://m.xiangha.com/zhishi/%@", self.alertDic[@"code"]]] options:@{} completionHandler:^(BOOL success) {
         
     }];
     
+}
+- (void)searchAction:(UIButton *)btn{
+    SearchListViewController *searchVC = [[SearchListViewController alloc] init];
+    [self.navigationController pushViewController:searchVC animated:YES];
     
 }
 - (void)loadData{

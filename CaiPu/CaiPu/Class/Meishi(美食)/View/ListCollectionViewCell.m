@@ -27,13 +27,13 @@
 - (void)confignTwo:(ListTwoModel *)model{
     [self.classImage sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",model.img ]] placeholderImage:nil options:SDWebImageRefreshCached];
     self.titleLable.text = model.name;
-    NSLog(@"%@", model.name);
+//    NSLog(@"%@", model.name);
     [self.btn setTitle:model.name forState:UIControlStateNormal];
 }
 - (void)confign:(ListModel *)model{
     [self.classImage sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",model.img ]] placeholderImage:nil options:SDWebImageRefreshCached];
     self.titleLable.text = model.name;
-    NSLog(@"%@", model.name);
+//    NSLog(@"%@", model.name);
     [self.btn setTitle:model.name forState:UIControlStateNormal];
 }
 - (UIImageView *)classImage{

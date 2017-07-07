@@ -22,7 +22,7 @@
     //设置状态栏的字体颜色模式
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     //设置状态栏是否隐藏
-    //[[UIApplication sharedApplication] setStatusBarHidden:YES];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
     
     
     // 设置导航栏标题文字颜色
